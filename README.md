@@ -23,7 +23,7 @@ The project approaches this problem through three stages: exploring customer dat
 
 ### Key Finding
 
-The **Support Vector Machine (RBF Kernel)** achieved the highest recall at **70%** among the models evaluated.
+The **Support Vector Machine (RBF Kernel)** achieved the highest reported recall at **70%** among the models evaluated.
 
 Recall measures the proportion of actual churn cases correctly identified by a model. A recall of 70% means the model identified approximately 70% of actual churners in the evaluated dataset.
 
@@ -46,17 +46,20 @@ flowchart LR
     <td width="33%" valign="top">
       <h3>🔍 Explore</h3>
       Investigate customer churn patterns using SQL queries.
-      <br><br><code>eda_queries/</code>
+      <br><br>
+      <a href="eda_queries/"><code>eda_queries/</code></a>
     </td>
     <td width="33%" valign="top">
       <h3>🧪 Test</h3>
       Examine relationships in the data using statistical hypothesis-testing notebooks.
-      <br><br><code>notebook/statistical_testing/</code>
+      <br><br>
+      <a href="notebook/statistical_testing/"><code>notebook/statistical_testing/</code></a>
     </td>
     <td width="33%" valign="top">
       <h3>🤖 Predict</h3>
       Evaluate five machine learning models and compare their performance.
-      <br><br><code>predictive_modelling/</code>
+      <br><br>
+      <a href="predictive_modelling/"><code>predictive_modelling/</code></a>
     </td>
   </tr>
 </table>
@@ -69,7 +72,7 @@ flowchart LR
 - Random Forest
 - XGBoost
 
-The SVM with an RBF kernel achieved the highest reported recall in the experiments. The available results do not establish that it was the best model across every evaluation metric.
+The SVM with an RBF kernel achieved the highest reported recall in the experiments. This does not necessarily mean it performed best on every evaluation metric.
 
 ## 🛠️ Technology Stack
 
@@ -79,16 +82,16 @@ The SVM with an RBF kernel achieved the highest reported recall in the experimen
 
 | Directory / File | Purpose |
 |---|---|
-| `data/` | Project data files |
-| `eda_queries/` | SQL exploration queries |
-| `notebook/statistical_testing/` | Statistical testing notebooks |
-| `predictive_modelling/` | Machine learning experiments |
-| `scripts/` | Supporting Python scripts |
-| `requirements.txt` | Python dependencies |
+| [`data/`](data/) | Project data files |
+| [`eda_queries/`](eda_queries/) | SQL exploration queries |
+| [`notebook/statistical_testing/`](notebook/statistical_testing/) | Statistical testing notebooks |
+| [`predictive_modelling/`](predictive_modelling/) | Machine learning experiments |
+| [`scripts/`](scripts/) | Supporting Python scripts |
+| [`requirements.txt`](requirements.txt) | Python dependencies |
 
 ## 💡 Takeaway
 
-Customer churn analysis connects data exploration with predictive modeling. In this project, five models were evaluated, and the SVM with an RBF kernel achieved 70% recall, demonstrating its ability to identify a portion of the customers who actually churned in the evaluated dataset.
+Customer churn analysis connects data exploration with predictive modeling. In this project, five machine learning models were evaluated, and the SVM with an RBF kernel achieved 70% recall, identifying approximately 70% of actual churners in the evaluated dataset.
 
 ## 📄 License
 
